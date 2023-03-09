@@ -19,7 +19,9 @@ namespace WinFormsApp1
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            TemaColor.Tema();
+            //this.BackColor = TemaColor.Barra;
+            //this.BarraT = TemaColor.Barra;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,6 +30,11 @@ namespace WinFormsApp1
             Form1 frm = (Form1)this.Owner;
             frm.Show();
             this.Hide();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
